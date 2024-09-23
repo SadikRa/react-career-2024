@@ -1,9 +1,12 @@
+
+import img from '../../assets/hardy.png'
+
 const Banner = () => {
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div >
-        <h2 className="text-center text-5xl">
-          One Step Closer To Your <br />
+    <div className="flex flex-col lg:flex-row gap-6 items-center justify-center text-center mb-24 mt-12">
+      <div className='flex flex-col gap-10  items-start text-left'>
+        <h2 className="text-5xl">
+          One Step <br /> Closer To Your <br />
           <span className="text-indigo-500">Dream Job</span>
         </h2>
         <p>
@@ -14,7 +17,7 @@ const Banner = () => {
         <button className="btn btn-primary">Get Started</button>
       </div>
       <div>
-        <img src="../../assets/hardy.png" alt="" />
+        <img src={img} alt="" />
       </div>
     </div>
   );
